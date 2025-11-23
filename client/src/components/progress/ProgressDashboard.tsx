@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { Card } from '../ui/Card';
 import { Ghost } from '../characters/Ghost';
 import { Witch } from '../characters/Witch';
@@ -108,12 +109,12 @@ export const ProgressDashboard: React.FC = () => {
           Upload more study materials to create spooky stories and test your knowledge with quizzes!
         </p>
         <div className="flex justify-center space-x-4">
-          <a
-            href="/"
+          <Link
+            to="/"
             className="inline-block px-6 py-3 bg-spooky-orange text-white rounded-lg hover:bg-opacity-80 transition-all"
           >
             🏠 Back to Home
-          </a>
+          </Link>
           <button
             onClick={loadProgress}
             className="inline-block px-6 py-3 bg-spooky-purple text-white rounded-lg hover:bg-opacity-80 transition-all"
