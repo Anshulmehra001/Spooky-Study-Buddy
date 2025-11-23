@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route, useNavigate, useParams } from '
 import { Navigation, FileUpload, Card, Ghost, Witch, LoadingSpinner } from './components';
 import { storyApi, quizApi, progressApi, handleApiError } from './services/api';
 import { SpookyStory, Quiz as QuizType, QuizResult } from '../../shared/src/types';
+import { localStoryGenerator } from './services/localStoryGenerator';
 import { SpookyErrorBoundary } from './components/errors/SpookyErrorBoundary';
 import { HalloweenParticles } from './components/effects/HalloweenEffects';
 import { SpookyAudio } from './components/audio/SpookyAudio';
@@ -68,17 +69,24 @@ function HomePage() {
     
     try {
       console.log('Generating story for:', fileName);
-      const response = await storyApi.generateStory({ content });
       
-      if (response.success && response.story) {
-        // Navigate to the story page
-        navigate(`/story/${response.story.shareableLink || response.story.id}`);
-      } else {
-        throw new Error('Failed to generate story');
-      }
+      // Use local story generator
+      const story = await localStoryGenerator.generateStory(content, fileName);
+      
+      // Add generation mode info
+      const provider = localStorage.getItem('ai_provider') || 'none';
+      (story as any).generatedBy = provider === 'none' ? 'Template Mode' : provider === 'openai' ? 'OpenAI' : 'Google Gemini';
+      
+      // Store in localStorage
+      const stories = JSON.parse(localStorage.getItem('spooky_stories') || '[]');
+      stories.push(story);
+      localStorage.setItem('spooky_stories', JSON.stringify(stories));
+      
+      // Navigate to the story page
+      navigate(`/story/${story.id}`);
     } catch (err) {
       console.error('Story generation error:', err);
-      setError(handleApiError(err));
+      setError(err instanceof Error ? err.message : 'Failed to generate story');
     } finally {
       setIsGenerating(false);
     }
@@ -185,7 +193,14 @@ function StoryPage() {
       }
 
       try {
-        const storyData = await storyApi.getStory(id);
+        // Get story from localStorage
+        const stories = JSON.parse(localStorage.getItem('spooky_stories') || '[]');
+        const storyData = stories.find((s: SpookyStory) => s.id === id);
+        
+        if (!storyData) {
+          throw new Error('Story not found');
+        }
+        
         setStory(storyData);
         
         // Record that the story was read for progress tracking
@@ -276,14 +291,18 @@ function QuizPage() {
 
       try {
         setIsGenerating(true);
-        // Generate a new quiz from the story
-        const response = await quizApi.generateQuiz(id, 'medium');
         
-        if (response.success && response.quiz) {
-          setQuiz(response.quiz);
-        } else {
-          throw new Error('Failed to generate quiz');
+        // Get story from localStorage
+        const stories = JSON.parse(localStorage.getItem('spooky_stories') || '[]');
+        const story = stories.find((s: SpookyStory) => s.id === id);
+        
+        if (!story) {
+          throw new Error('Story not found');
         }
+        
+        // Generate quiz locally
+        const quiz = localStoryGenerator.generateQuiz(story);
+        setQuiz(quiz);
       } catch (err) {
         console.error('Error generating quiz:', err);
         setError(handleApiError(err));

@@ -28,7 +28,7 @@
   "default": {
     "userId": "default",
     "level": 1,
-    "experiencePoints": 30,
+    "experiencePoints": 40,
     "storiesRead": [
       {
         "id": "story-1763905044445-fallback",
@@ -91,6 +91,26 @@
         "estimatedReadTime": 2,
         "createdAt": "2025-11-23T14:07:26.061Z",
         "shareableLink": "story-1763906846061-fallback-p8rxi00xltm"
+      },
+      {
+        "id": "story-1763908147507-fallback",
+        "title": "🎃 The Haunted Lesson 👻",
+        "content": "🎃 **The Haunted Library of Knowledge** 🎃\nOn a dark and stormy night, Professor Ghostly the ghost discovered an ancient tome in the depths of the haunted library. The dusty pages glowed with an eerie light as they revealed secrets about Direct text input.\n\"Boo-tiful learning awaits!\" Professor Ghostly exclaimed, their spectral form shimmering with excitement.\n\n📚 **The Ancient Knowledge Revealed** 📚\nMadame Mystique the witch appeared in a swirl of mist, ready to help decode the mysterious text:\n\nThe American Revolution (1775-1783) was a colonial revolt that took place in British America. The American Patriots in the Thirteen Colonies won independence from Great Britain, becoming the United States of America.\r\n\r\nKey events leading to the revolution:\r\n- The Stamp Act (1765) - taxed printed materials\r\n- The Boston Tea Party (1773) - protest against tea taxes\r\n- The Intolerable Acts (1774) - punitive laws after the Tea Party\r\n\r\nImportant battles:\r\n- Lexington and Concord (1775) - \"shot heard round the world\"\r\n- Bunker Hill (1775) - proved colonists could fight British forces\r\n- Saratoga (1777) - convinced France to join the war\r\n- Yorktown (1781) - final major battle, British surrender\r\n\r\nThe war ended with the Treaty of Paris in 1783, which recognized American independence.\n\n\n✨ **The Lesson Learned** ✨\n\"Knowledge is the most powerful spell!\" Madame Mystique said with a knowing smile. \"Now you understand the mysteries within!\"\n\nThe spooky characters had successfully transformed the lesson into an unforgettable adventure. The knowledge was no longer just words on a page - it was a story that would haunt your memory forever! 👻📖\n",
+        "originalContent": "The American Revolution (1775-1783) was a colonial revolt that took place in British America. The American Patriots in the Thirteen Colonies won independence from Great Britain, becoming the United States of America.\r\n\r\nKey events leading to the revolution:\r\n- The Stamp Act (1765) - taxed printed materials\r\n- The Boston Tea Party (1773) - protest against tea taxes\r\n- The Intolerable Acts (1774) - punitive laws after the Tea Party\r\n\r\nImportant battles:\r\n- Lexington and Concord (1775) - \"shot heard round the world\"\r\n- Bunker Hill (1775) - proved colonists could fight British forces\r\n- Saratoga (1777) - convinced France to join the war\r\n- Yorktown (1781) - final major battle, British surrender\r\n\r\nThe war ended with the Treaty of Paris in 1783, which recognized American independence.",
+        "originalTopic": "Direct text input",
+        "characters": [
+          "Professor Ghostly",
+          "Madame Mystique"
+        ],
+        "keyLearningPoints": [
+          "The American Revolution (1775-1783) was a colonial revolt that took place in British America",
+          "The American Patriots in the Thirteen Colonies won independence from Great Britain, becoming the United States of America",
+          "Key events leading to the revolution:\r\n- The Stamp Act (1765) - taxed printed materials\r\n- The Boston Tea Party (1773) - protest against tea taxes\r\n- The Intolerable Acts (1774) - punitive laws after the Tea Party\r\n\r\nImportant battles:\r\n- Lexington and Concord (1775) - \"shot heard round the world\"\r\n- Bunker Hill (1775) - proved colonists could fight British forces\r\n- Saratoga (1777) - convinced France to join the war\r\n- Yorktown (1781) - final major battle, British surrender\r\n\r\nThe war ended with the Treaty of Paris in 1783, which recognized American independence"
+        ],
+        "difficulty": "intermediate",
+        "estimatedReadTime": 2,
+        "createdAt": "2025-11-23T14:29:07.507Z",
+        "shareableLink": "story-1763908147507-fallback-uoy1ntb9mmn"
       }
     ],
     "quizzesTaken": [
