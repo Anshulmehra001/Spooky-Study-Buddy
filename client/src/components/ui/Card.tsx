@@ -19,8 +19,11 @@ export const Card: React.FC<CardProps> = ({
     transparent: 'bg-transparent border border-spooky-orange border-opacity-20'
   };
   
+  // Check if className contains overflow-visible, if not add overflow-hidden as default
+  const overflowClass = className.includes('overflow-') ? '' : 'overflow-hidden';
+  
   return (
-    <div className={`${baseClasses} ${variantClasses[variant]} ${className}`}>
+    <div className={`${baseClasses} ${variantClasses[variant]} ${overflowClass} ${className}`}>
       {children}
     </div>
   );

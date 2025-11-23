@@ -56,26 +56,26 @@ export const ProgressDashboard: React.FC = () => {
       </Card>
 
       <div className="grid md:grid-cols-2 gap-6">
-        <Card className="text-center min-h-[280px] flex flex-col justify-center p-8">
-          <div className="mb-4">
+        <Card className="text-center min-h-[300px] flex flex-col justify-center items-center p-8 overflow-visible">
+          <div className="mb-6 flex justify-center">
             <Ghost message="Stories Created!" />
           </div>
-          <div className="text-6xl font-bold text-spooky-orange mb-2 leading-tight">
+          <div className="text-7xl font-bold text-spooky-orange mb-4 leading-none w-full overflow-visible" style={{ lineHeight: '1' }}>
             {storiesCount}
           </div>
-          <p className="text-spooky-cream opacity-80 text-lg leading-relaxed">
+          <p className="text-spooky-cream opacity-80 text-lg mt-2">
             Spooky Stories Generated
           </p>
         </Card>
 
-        <Card className="text-center min-h-[280px] flex flex-col justify-center p-8">
-          <div className="mb-4">
+        <Card className="text-center min-h-[300px] flex flex-col justify-center items-center p-8 overflow-visible">
+          <div className="mb-6 flex justify-center">
             <Witch message="Quizzes Taken!" />
           </div>
-          <div className="text-6xl font-bold text-spooky-purple mb-2 leading-tight">
+          <div className="text-7xl font-bold text-spooky-purple mb-4 leading-none w-full overflow-visible" style={{ lineHeight: '1' }}>
             {quizzesCount}
           </div>
-          <p className="text-spooky-cream opacity-80 text-lg leading-relaxed">
+          <p className="text-spooky-cream opacity-80 text-lg mt-2">
             Knowledge Tests Completed
           </p>
         </Card>
@@ -83,32 +83,32 @@ export const ProgressDashboard: React.FC = () => {
 
       {quizzesCount > 0 && (
         <div className="grid md:grid-cols-3 gap-6">
-          <Card className="text-center min-h-[200px] flex flex-col justify-center py-8 px-6">
-            <div className="text-5xl mb-3">📈</div>
-            <div className="text-4xl font-bold text-spooky-orange mb-2 leading-tight">
+          <Card className="text-center min-h-[220px] flex flex-col justify-center items-center py-8 px-6 overflow-visible">
+            <div className="text-5xl mb-4">📈</div>
+            <div className="text-5xl font-bold text-spooky-orange mb-3 leading-none overflow-visible" style={{ lineHeight: '1' }}>
               {averageScore}%
             </div>
-            <p className="text-spooky-cream opacity-80 leading-relaxed">
+            <p className="text-spooky-cream opacity-80 mt-2">
               Average Score
             </p>
           </Card>
 
-          <Card className="text-center min-h-[200px] flex flex-col justify-center py-8 px-6">
-            <div className="text-5xl mb-3">⏱️</div>
-            <div className="text-4xl font-bold text-spooky-purple mb-2 leading-tight">
+          <Card className="text-center min-h-[220px] flex flex-col justify-center items-center py-8 px-6 overflow-visible">
+            <div className="text-5xl mb-4">⏱️</div>
+            <div className="text-5xl font-bold text-spooky-purple mb-3 leading-none overflow-visible" style={{ lineHeight: '1' }}>
               {Math.floor(totalTime / 60)}m
             </div>
-            <p className="text-spooky-cream opacity-80 leading-relaxed">
+            <p className="text-spooky-cream opacity-80 mt-2">
               Total Study Time
             </p>
           </Card>
 
-          <Card className="text-center min-h-[200px] flex flex-col justify-center py-8 px-6">
-            <div className="text-5xl mb-3">⭐</div>
-            <div className="text-4xl font-bold text-spooky-orange mb-2 leading-tight">
+          <Card className="text-center min-h-[220px] flex flex-col justify-center items-center py-8 px-6 overflow-visible">
+            <div className="text-5xl mb-4">⭐</div>
+            <div className="text-5xl font-bold text-spooky-orange mb-3 leading-none overflow-visible" style={{ lineHeight: '1' }}>
               {perfectScores}
             </div>
-            <p className="text-spooky-cream opacity-80 leading-relaxed">
+            <p className="text-spooky-cream opacity-80 mt-2">
               Perfect Scores
             </p>
           </Card>
