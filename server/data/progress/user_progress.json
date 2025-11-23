@@ -28,7 +28,7 @@
   "default": {
     "userId": "default",
     "level": 1,
-    "experiencePoints": 40,
+    "experiencePoints": 50,
     "storiesRead": [
       {
         "id": "story-1763905044445-fallback",
@@ -111,6 +111,25 @@
         "estimatedReadTime": 2,
         "createdAt": "2025-11-23T14:29:07.507Z",
         "shareableLink": "story-1763908147507-fallback-uoy1ntb9mmn"
+      },
+      {
+        "id": "story-1763909182075",
+        "title": "🎃 Professor Mystique's Guide to american revolution",
+        "content": "🎃 Welcome, brave student! 🎃\n\nI am Professor Mystique, and I shall guide you through the mysterious realm of american revolution!\n\n*The ancient tome glows with an eerie light as the lesson begins...*\n\n---\n\n📚 The Ancient Knowledge Revealed 📚\n\nThe American Revolution (1775-1783) was a colonial revolt that took place in British America. The American Patriots in the Thirteen Colonies won independence from Great Britain, becoming the United States of America.\r\n\r\nKey events leading to the revolution:\r\n- The Stamp Act (1765) - taxed printed materials\r\n- The Boston Tea Party (1773) - protest against tea taxes\r\n- The Intolerable Acts (1774) - punitive laws after the Tea Party\r\n\r\nImportant battles:\r\n- Lexington and Concord (1775) - \"shot heard round the world\"\r\n- Bunker Hill (1775) - proved colonists could fight British forces\r\n- Saratoga (1777) - convinced France to join the war\r\n- Yorktown (1781) - final major battle, British surrender\r\n\r\nThe war ended with the Treaty of Paris in 1783, which recognized American independence.\n\n---\n\n✨ The Lesson Learned ✨\n\nAnd thus concludes our spooky journey through american revolution! Remember these teachings well, for they shall serve you in your academic adventures!\n\n*Professor Mystique fades into the mist, leaving you with newfound knowledge...*\n\n🎃 Stay spooky and keep learning! 👻",
+        "originalContent": "The American Revolution (1775-1783) was a colonial revolt that took place in British America. The American Patriots in the Thirteen Colonies won independence from Great Britain, becoming the United States of America.\r\n\r\nKey events leading to the revolution:\r\n- The Stamp Act (1765) - taxed printed materials\r\n- The Boston Tea Party (1773) - protest against tea taxes\r\n- The Intolerable Acts (1774) - punitive laws after the Tea Party\r\n\r\nImportant battles:\r\n- Lexington and Concord (1775) - \"shot heard round the world\"\r\n- Bunker Hill (1775) - proved colonists could fight British forces\r\n- Saratoga (1777) - convinced France to join the war\r\n- Yorktown (1781) - final major battle, British surrender\r\n\r\nThe war ended with the Treaty of Paris in 1783, which recognized American independence.",
+        "originalTopic": "american revolution",
+        "characters": [
+          "witch",
+          "vampire"
+        ],
+        "keyLearningPoints": [
+          "The American Revolution (1775-1783) was a colonial revolt that took place in British America",
+          "The American Patriots in the Thirteen Colonies won independence from Great Britain, becoming the United States of America"
+        ],
+        "difficulty": "medium",
+        "estimatedReadTime": 1,
+        "createdAt": "2025-11-23T14:46:22.075Z",
+        "generatedBy": "Google Gemini"
       }
     ],
     "quizzesTaken": [

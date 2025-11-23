@@ -275,13 +275,15 @@ export const Quiz: React.FC<QuizProps> = ({ quiz, onComplete, onRetry }) => {
         >
           <Card>
             {/* Character Host */}
-            <div className="flex justify-center mb-6">
+            <div className="flex flex-col items-center mb-6 space-y-3">
               <CharacterHost 
                 character={currentQuestion.character}
-                message={`Question ${progress}`}
                 isActive={true}
                 size="lg"
               />
+              <div className="text-sm font-medium text-spooky-orange opacity-80">
+                Question {progress} of {quiz.questions.length}
+              </div>
             </div>
 
             {/* Question */}
