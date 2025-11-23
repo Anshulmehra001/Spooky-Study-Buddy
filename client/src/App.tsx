@@ -34,7 +34,7 @@ function App() {
           <Navigation />
 
           {/* Spooky Audio Controls */}
-          <SpookyAudio enabled={true} volume={0.2} />
+          <SpookyAudio enabled={true} volume={0.3} />
 
           {/* Main content with page transitions */}
           <div className="relative z-10">

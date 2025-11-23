@@ -132,7 +132,13 @@ export const Quiz: React.FC<QuizProps> = ({ quiz, onComplete, onRetry }) => {
     if (state.showFeedback) return;
 
     const isCorrect = answerIndex === currentQuestion.correctAnswer;
-    // const questionTime = Math.floor((Date.now() - questionStartTime) / 1000); // For future use
+    
+    // Play sound effect
+    if (isCorrect && (window as any).spookySounds?.success) {
+      (window as any).spookySounds.success();
+    } else if (!isCorrect && (window as any).spookySounds?.error) {
+      (window as any).spookySounds.error();
+    }
     
     setState(prev => ({
       ...prev,

@@ -7,11 +7,11 @@ interface SpookyAudioProps {
 }
 
 export const SpookyAudio: React.FC<SpookyAudioProps> = ({ 
-  enabled = false, 
+  enabled = true, 
   volume = 0.3 
 }) => {
   const [isPlaying, setIsPlaying] = useState(false);
-  const [isMuted, setIsMuted] = useState(!enabled);
+  const [isMuted, setIsMuted] = useState(false);
   const audioRef = useRef<HTMLAudioElement>(null);
 
   // Sound effect functions using Web Audio API
