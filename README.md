@@ -9,7 +9,7 @@
 
 **Kiroween Hackathon 2025 - Costume Contest Category**
 
-🎮 **[Try Live Demo](https://anshulmehra001.github.io/Spooky-Study-Buddy/)** | 📺 **[Watch Video](#)** | 📖 **[Read Docs](./KIRO_USAGE_WRITEUP.md)**
+🎮 **[Try Live Demo](https://anshulmehra001.github.io/Spooky-Study-Buddy/)** | 📺 **[Watch Video](https://youtu.be/HSudCV7OK8s)** | 💻 **[View Code](https://github.com/Anshulmehra001/Spooky-Study-Buddy)** | 📖 **[Read Docs](./KIRO_USAGE_WRITEUP.md)**
 
 ---
 
@@ -80,53 +80,69 @@ Upload study materials (text files, PDFs, or paste directly) and watch as AI tra
 
 ### Installation
 
+📺 **[Watch Video Demo](https://youtu.be/HSudCV7OK8s)** | 💻 **[GitHub Repository](https://github.com/Anshulmehra001/Spooky-Study-Buddy)**
+
 ```bash
 # Clone the repository
-git clone <repository-url>
-cd spooky-study-buddy
+git clone https://github.com/Anshulmehra001/Spooky-Study-Buddy.git
+cd Spooky-Study-Buddy
 
-# Install all dependencies
-npm run install:all
+# Install dependencies
+npm install
+cd client && npm install
 
-# Set up environment variables
-cp server/.env.example server/.env
-cp client/.env.example client/.env
-
-# Add your OpenAI API key to server/.env (optional - fallback templates work without it)
-# OPENAI_API_KEY=your_key_here
+# The app works immediately with Template Mode (no API key needed)!
 ```
+
+### Optional: Enable AI-Powered Stories
+
+The app works perfectly without any API keys using Template Mode. To enable advanced AI features:
+
+**Option 1: OpenAI (GPT-3.5/4)**
+1. Get API key from [OpenAI Platform](https://platform.openai.com/api-keys)
+2. Open AI Settings (⚙️) in the app
+3. Select "OpenAI" and paste your key
+4. Stories will now use GPT-powered generation!
+
+**Option 2: Google Gemini (Free tier available)**
+1. Get API key from [Google AI Studio](https://makersuite.google.com/app/apikey)
+2. Open AI Settings (⚙️) in the app
+3. Select "Gemini" and paste your key
+4. Stories will now use Gemini 1.5 Flash!
+
+**Note:** API keys are stored locally in your browser and never sent to our servers.
 
 ### Development
 
 ```bash
-# Start both frontend and backend
+# Start the development server
+cd client
 npm run dev
 
-# Or start separately:
-# Terminal 1 - Backend (http://localhost:3001)
-cd server && npm run dev
-
-# Terminal 2 - Frontend (http://localhost:3000)
-cd client && npm run dev
+# App will open at http://localhost:3000
 ```
 
 ### Production Build
 
 ```bash
-# Build all packages
+# Build for production
+cd client
 npm run build
 
-# Start production server
-npm run start:prod
+# Preview production build
+npm run preview
 ```
 
-### Docker Deployment
+### Deploy to GitHub Pages
+
+The app is configured for automatic deployment to GitHub Pages:
 
 ```bash
-# Build and start with Docker Compose
-docker-compose up --build -d
+# Just push to main branch
+git push origin main
 
-# Access at http://localhost:3000
+# GitHub Actions will automatically build and deploy
+# Live at: https://anshulmehra001.github.io/Spooky-Study-Buddy/
 ```
 
 ---
@@ -364,18 +380,24 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-## 🌐 Deployment
+## 🌐 Live Deployment
 
-**Live Demo**: https://anshulmehra001.github.io/Spooky-Study-Buddy/
+**🎮 Live Demo**: https://anshulmehra001.github.io/Spooky-Study-Buddy/
 
-The app is deployed as a static site on GitHub Pages. It runs entirely in your browser with no backend required!
+**📺 Video Demo**: https://youtu.be/HSudCV7OK8s
 
-### Features:
-- ✅ **No Backend Needed** - Fully client-side application
-- ✅ **Works Offline** - After first load, works without internet
+**💻 Source Code**: https://github.com/Anshulmehra001/Spooky-Study-Buddy
+
+The app is deployed as a static site on GitHub Pages and runs entirely in your browser!
+
+### Deployment Features:
+- ✅ **No Backend Required** - Fully client-side application
+- ✅ **Instant Access** - No installation or signup needed
 - ✅ **Privacy First** - All data stored locally in your browser
-- ✅ **Optional AI** - Add your own OpenAI or Gemini API key for enhanced stories
-- ✅ **Template Mode** - Works perfectly without any API key
+- ✅ **3 AI Modes** - Template (no key), OpenAI, or Gemini
+- ✅ **Works Immediately** - Template mode requires no configuration
+- ✅ **Bring Your Own Key** - Add OpenAI or Gemini API key for enhanced AI stories
+- ✅ **Auto-Deploy** - Push to main branch triggers automatic deployment
 
 ---
 
@@ -385,7 +407,7 @@ For questions, feedback, or demo requests:
 
 - **Repository**: https://github.com/Anshulmehra001/Spooky-Study-Buddy
 - **Live Demo**: https://anshulmehra001.github.io/Spooky-Study-Buddy/
-- **Video Demo**: [Coming Soon]
+- **Video Demo**: https://youtu.be/HSudCV7OK8s
 
 ---
 
