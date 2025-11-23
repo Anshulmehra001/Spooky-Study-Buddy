@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Card } from '../ui/Card';
+import { Button } from '../ui/Button';
 import { Ghost } from '../characters/Ghost';
 import { Witch } from '../characters/Witch';
 import { SpookyStory, QuizResult } from '../../../../shared/src/types';
@@ -11,10 +12,11 @@ export const ProgressDashboard: React.FC = () => {
   const [averageScore, setAverageScore] = useState(0);
   const [totalTime, setTotalTime] = useState(0);
   const [perfectScores, setPerfectScores] = useState(0);
+  const [refreshKey, setRefreshKey] = useState(0);
 
   useEffect(() => {
     loadProgress();
-  }, []);
+  }, [refreshKey]);
 
   const loadProgress = () => {
     const stories: SpookyStory[] = JSON.parse(localStorage.getItem('spooky_stories') || '[]');
@@ -31,7 +33,15 @@ export const ProgressDashboard: React.FC = () => {
       setAverageScore(Math.round(avgScore));
       setTotalTime(time);
       setPerfectScores(perfect);
+    } else {
+      setAverageScore(0);
+      setTotalTime(0);
+      setPerfectScores(0);
     }
+  };
+
+  const handleRefresh = () => {
+    setRefreshKey(prev => prev + 1);
   };
 
   return (
@@ -109,18 +119,14 @@ export const ProgressDashboard: React.FC = () => {
           Upload more study materials to create spooky stories and test your knowledge with quizzes!
         </p>
         <div className="flex justify-center space-x-4">
-          <Link
-            to="/"
-            className="inline-block px-6 py-3 bg-spooky-orange text-white rounded-lg hover:bg-opacity-80 transition-all"
-          >
-            🏠 Back to Home
+          <Link to="/">
+            <Button variant="primary" size="lg">
+              🏠 Back to Home
+            </Button>
           </Link>
-          <button
-            onClick={loadProgress}
-            className="inline-block px-6 py-3 bg-spooky-purple text-white rounded-lg hover:bg-opacity-80 transition-all"
-          >
+          <Button variant="secondary" size="lg" onClick={handleRefresh}>
             🔄 Refresh
-          </button>
+          </Button>
         </div>
       </Card>
     </div>
