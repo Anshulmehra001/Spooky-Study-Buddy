@@ -28,7 +28,7 @@ export class LocalStoryGenerator {
     const prompt = `Transform this educational content into an engaging Halloween-themed story. Keep ALL the educational content intact but wrap it in a spooky narrative with Halloween characters (ghosts, vampires, witches, skeletons). Make it fun but preserve the learning material.
 
 Educational Content:
-${content}
+${content.substring(0, 1500)}
 
 Create a story that:
 1. Starts with a Halloween character introducing the topic
@@ -38,36 +38,48 @@ Create a story that:
 
     let storyContent: string;
 
-    if (provider === 'openai') {
-      const response = await fetch('https://api.openai.com/v1/chat/completions', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          'Authorization': `Bearer ${apiKey}`
-        },
-        body: JSON.stringify({
-          model: 'gpt-3.5-turbo',
-          messages: [{ role: 'user', content: prompt }],
-          temperature: 0.7,
-          max_tokens: 2000
-        })
-      });
+    try {
+      if (provider === 'openai') {
+        const response = await fetch('https://api.openai.com/v1/chat/completions', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'Authorization': `Bearer ${apiKey}`
+          },
+          body: JSON.stringify({
+            model: 'gpt-3.5-turbo',
+            messages: [{ role: 'user', content: prompt }],
+            temperature: 0.7,
+            max_tokens: 2000
+          })
+        });
 
-      if (!response.ok) throw new Error('OpenAI API failed');
-      const data = await response.json();
-      storyContent = data.choices[0].message.content;
-    } else {
-      const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=${apiKey}`, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          contents: [{ parts: [{ text: prompt }] }]
-        })
-      });
+        if (!response.ok) {
+          const errorData = await response.json().catch(() => ({}));
+          throw new Error(`OpenAI API error: ${errorData.error?.message || response.statusText}`);
+        }
+        const data = await response.json();
+        storyContent = data.choices[0].message.content;
+      } else {
+        // Gemini API
+        const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${apiKey}`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            contents: [{ parts: [{ text: prompt }] }]
+          })
+        });
 
-      if (!response.ok) throw new Error('Gemini API failed');
-      const data = await response.json();
-      storyContent = data.candidates[0].content.parts[0].text;
+        if (!response.ok) {
+          const errorData = await response.json().catch(() => ({}));
+          throw new Error(`Gemini API error: ${errorData.error?.message || response.statusText}`);
+        }
+        const data = await response.json();
+        storyContent = data.candidates[0].content.parts[0].text;
+      }
+    } catch (error) {
+      console.error(`${provider} API error:`, error);
+      throw error;
     }
 
     const characters = this.selectRandomCharacters(2);
