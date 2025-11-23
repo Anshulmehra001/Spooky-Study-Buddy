@@ -38,7 +38,7 @@ jobs:
           cd client
           npm run build
         env:
-          VITE_API_URL: https://spooky-study-buddy-api.onrender.com
+          GITHUB_PAGES: true
 
       - name: Setup Pages
         uses: actions/configure-pages@v4

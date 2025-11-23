@@ -145,6 +145,16 @@
           "First Steps"
         ],
         "submittedAt": "2025-11-23T13:38:43.482Z"
+      },
+      {
+        "quizId": "quiz-1763909223501",
+        "score": 0,
+        "totalQuestions": 2,
+        "correctAnswers": 0,
+        "timeSpent": 78,
+        "feedback": "Quiz completed! Check your results above.",
+        "badges": [],
+        "submittedAt": "2025-11-23T14:48:25.106Z"
       }
     ],
     "badges": [
@@ -171,9 +181,17 @@
         "icon": "👻",
         "unlockedAt": "2025-11-23T13:38:43.522Z",
         "rarity": "common"
+      },
+      {
+        "id": "story-collector",
+        "name": "Story Collector",
+        "description": "Read 5 spooky stories!",
+        "icon": "📖",
+        "unlockedAt": "2025-11-23T14:48:25.115Z",
+        "rarity": "rare"
       }
     ],
-    "currentStreak": 1,
-    "longestStreak": 1
+    "currentStreak": 2,
+    "longestStreak": 2
   }
 }

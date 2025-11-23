@@ -5,9 +5,11 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue)](https://www.typescriptlang.org/)
 [![React](https://img.shields.io/badge/React-18-61dafb)](https://reactjs.org/)
-[![Node.js](https://img.shields.io/badge/Node.js-18+-green)](https://nodejs.org/)
+[![Live Demo](https://img.shields.io/badge/Demo-Live-success)](https://anshulmehra001.github.io/Spooky-Study-Buddy/)
 
 **Kiroween Hackathon 2025 - Costume Contest Category**
+
+🎮 **[Try Live Demo](https://anshulmehra001.github.io/Spooky-Study-Buddy/)** | 📺 **[Watch Video](#)** | 📖 **[Read Docs](./KIRO_USAGE_WRITEUP.md)**
 
 ---
 
@@ -27,10 +29,14 @@ Upload study materials (text files, PDFs, or paste directly) and watch as AI tra
 
 ## ✨ Features
 
-### 🧙‍♀️ AI-Powered Story Generation
+### 🧙‍♀️ AI-Powered Story Generation (3 Modes!)
+- **Template Mode** (Default): Works instantly without any API key - perfect for quick use
+- **OpenAI Mode**: Add your own API key for GPT-3.5 powered creative stories
+- **Gemini Mode**: Use Google's Gemini 1.5 Flash for advanced AI narratives
 - Transform any educational content into engaging Halloween narratives
 - Preserves all key learning concepts while adding spooky magic
 - Features animated characters: ghosts, vampires, witches, and skeletons
+- Shows generation mode badge on each story
 - Supports text files, PDFs, and direct text input
 
 ### 🎯 Interactive Quiz System
@@ -358,13 +364,28 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
+## 🌐 Deployment
+
+**Live Demo**: https://anshulmehra001.github.io/Spooky-Study-Buddy/
+
+The app is deployed as a static site on GitHub Pages. It runs entirely in your browser with no backend required!
+
+### Features:
+- ✅ **No Backend Needed** - Fully client-side application
+- ✅ **Works Offline** - After first load, works without internet
+- ✅ **Privacy First** - All data stored locally in your browser
+- ✅ **Optional AI** - Add your own OpenAI or Gemini API key for enhanced stories
+- ✅ **Template Mode** - Works perfectly without any API key
+
+---
+
 ## 📞 Contact
 
 For questions, feedback, or demo requests:
 
 - **Repository**: https://github.com/Anshulmehra001/Spooky-Study-Buddy
-- **Live Demo**: [Deployment URL]
-- **Video Demo**: [YouTube URL]
+- **Live Demo**: https://anshulmehra001.github.io/Spooky-Study-Buddy/
+- **Video Demo**: [Coming Soon]
 
 ---
 
