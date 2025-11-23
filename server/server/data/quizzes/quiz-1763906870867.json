@@ -1,0 +1,70 @@
+{
+  "id": "quiz-1763906870867",
+  "storyId": "story-1763906846061-fallback",
+  "questions": [
+    {
+      "id": "q1-1763906870866",
+      "question": "Complete the statement: \"\" Count ______ said with a knowing smile\"",
+      "options": [
+        "Magic",
+        "Count",
+        "knowing",
+        "Studula"
+      ],
+      "correctAnswer": 3,
+      "explanation": "The correct answer is \"Studula\". This comes directly from your study material: \"\" Count Studula said with a knowing smile\""
+    },
+    {
+      "id": "q2-1763906870867",
+      "question": "Complete the statement: \"The knowledge was no longer just ______ on a page - it was a story that would haunt your memory forever\"",
+      "options": [
+        "words",
+        "knowledge",
+        "longer",
+        "Magic"
+      ],
+      "correctAnswer": 0,
+      "explanation": "The correct answer is \"words\". This comes directly from your study material: \"The knowledge was no longer just words on a page - it was a story that would haunt your memory forever\""
+    },
+    {
+      "id": "q3-1763906870867",
+      "question": "Complete the statement: \"🎃 ______ Haunted Library of Knowledge** 🎃\nOn a dark and stormy night, Bonnie Bones the skeleton discovered an ancient tome in the depths of the haunted library\"",
+      "options": [
+        "Haunted",
+        "Enchanted",
+        "**The",
+        "Library"
+      ],
+      "correctAnswer": 2,
+      "explanation": "The correct answer is \"**The\". This comes directly from your study material: \"🎃 **The Haunted Library of Knowledge** 🎃\nOn a dark and stormy night, Bonnie Bones the skeleton discovered an ancient tome in the depths of the haunted library\""
+    },
+    {
+      "id": "q4-1763906870867",
+      "question": "Complete the statement: \"\" Bonnie Bones ______ their spectral form shimmering with excitement\"",
+      "options": [
+        "exclaimed,",
+        "Bonnie",
+        "Bones",
+        "Halloween"
+      ],
+      "correctAnswer": 0,
+      "explanation": "The correct answer is \"exclaimed,\". This comes directly from your study material: \"\" Bonnie Bones exclaimed, their spectral form shimmering with excitement\""
+    },
+    {
+      "id": "q5-1763906870867",
+      "question": "Complete the statement: \"The dusty ______ glowed with an eerie light as they revealed secrets about Direct text input\"",
+      "options": [
+        "pages",
+        "dusty",
+        "Shadow",
+        "glowed"
+      ],
+      "correctAnswer": 0,
+      "explanation": "The correct answer is \"pages\". This comes directly from your study material: \"The dusty pages glowed with an eerie light as they revealed secrets about Direct text input\""
+    }
+  ],
+  "totalPoints": 50,
+  "difficulty": "medium",
+  "timeLimit": 450,
+  "createdAt": "2025-11-23T14:07:50.867Z"
+}

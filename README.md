@@ -362,7 +362,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 For questions, feedback, or demo requests:
 
-- **Repository**: [GitHub URL]
+- **Repository**: https://github.com/Anshulmehra001/Spooky-Study-Buddy
 - **Live Demo**: [Deployment URL]
 - **Video Demo**: [YouTube URL]
 
