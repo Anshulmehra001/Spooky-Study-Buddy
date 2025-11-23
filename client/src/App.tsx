@@ -6,7 +6,7 @@ import { Card } from './components/ui/Card';
 import { Ghost } from './components/characters/Ghost';
 import { Witch } from './components/characters/Witch';
 import { LoadingSpinner } from './components/ui/LoadingSpinner';
-import { quizApi, progressApi, handleApiError } from './services/api';
+import { handleApiError } from './services/api';
 import { SpookyStory, Quiz as QuizType, QuizResult } from '../../shared/src/types';
 import { localStoryGenerator } from './services/localStoryGenerator';
 import { SpookyErrorBoundary } from './components/errors/SpookyErrorBoundary';
@@ -207,14 +207,6 @@ function StoryPage() {
         }
         
         setStory(storyData);
-        
-        // Record that the story was read for progress tracking
-        try {
-          await progressApi.recordStoryRead(storyData);
-        } catch (progressErr) {
-          console.warn('Failed to record story read progress:', progressErr);
-          // Don't fail the whole operation if progress tracking fails
-        }
       } catch (err) {
         console.error('Error loading story:', err);
         setError(handleApiError(err));
@@ -325,13 +317,10 @@ function QuizPage() {
     setCelebrationMessage(celebration || '');
     setRetrySuggestions(suggestions || []);
     
-    // Record quiz completion for progress tracking
-    try {
-      await progressApi.recordQuizCompleted(result);
-    } catch (progressErr) {
-      console.warn('Failed to record quiz completion progress:', progressErr);
-      // Don't fail the whole operation if progress tracking fails
-    }
+    // Store quiz result in localStorage
+    const quizResults = JSON.parse(localStorage.getItem('quiz_results') || '[]');
+    quizResults.push(result);
+    localStorage.setItem('quiz_results', JSON.stringify(quizResults));
   };
 
   const handleRetry = async () => {
@@ -341,17 +330,19 @@ function QuizPage() {
       setCelebrationMessage('');
       setRetrySuggestions([]);
       
-      // Generate a new quiz with different questions
-      const response = await quizApi.retryQuiz(id!, 'medium');
+      // Get story and generate new quiz
+      const stories = JSON.parse(localStorage.getItem('spooky_stories') || '[]');
+      const story = stories.find((s: SpookyStory) => s.id === id);
       
-      if (response.success && response.quiz) {
-        setQuiz(response.quiz);
-      } else {
-        throw new Error('Failed to generate retry quiz');
+      if (!story) {
+        throw new Error('Story not found');
       }
+      
+      const newQuiz = localStoryGenerator.generateQuiz(story);
+      setQuiz(newQuiz);
     } catch (err) {
       console.error('Error generating retry quiz:', err);
-      setError(handleApiError(err));
+      setError(err instanceof Error ? err.message : 'Failed to generate quiz');
     } finally {
       setLoading(false);
     }
