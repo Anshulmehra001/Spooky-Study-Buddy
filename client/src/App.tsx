@@ -21,9 +21,11 @@ const QuizResults = lazy(() => import('./components/quiz/QuizResults').then(modu
 const ProgressDashboard = lazy(() => import('./components/progress/ProgressDashboard').then(module => ({ default: module.ProgressDashboard })));
 
 function App() {
+  const basename = (import.meta as any).env?.PROD ? '/Spooky-Study-Buddy' : '/';
+  
   return (
     <SpookyErrorBoundary>
-      <Router>
+      <Router basename={basename}>
         <div className="min-h-screen bg-spooky-navy">
           {/* Enhanced Halloween Background with Particles */}
           <HalloweenParticles />

@@ -185,7 +185,6 @@ Create a spooky story that teaches this material:`;
     
     // Split content into paragraphs for better story structure
     const paragraphs = options.content.split(/\n\n+/).filter(p => p.trim().length > 0);
-    const sentences = options.content.split(/[.!?]+/).filter(s => s.trim().length > 20);
     
     // Create an engaging story that preserves ALL educational content
     let storyParts = [];
