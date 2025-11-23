@@ -1,0 +1,10 @@
+Photosynthesis is the process by which plants convert sunlight into energy. Plants use chlorophyll in their leaves to capture light energy from the sun. This energy is used to convert carbon dioxide from the air and water from the soil into glucose (sugar) and oxygen.
+
+The basic equation for photosynthesis is:
+6CO2 + 6H2O + light energy → C6H12O6 + 6O2
+
+This process happens in two main stages:
+1. Light-dependent reactions (occur in the thylakoids)
+2. Light-independent reactions or Calvin cycle (occur in the stroma)
+
+Photosynthesis is essential for life on Earth because it produces oxygen and forms the base of most food chains.

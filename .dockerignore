@@ -1,0 +1,82 @@
+# Dependencies
+node_modules
+npm-debug.log
+yarn-error.log
+
+# Build outputs
+client/dist
+server/dist
+coverage
+.nyc_output
+
+# Environment files
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+client/.env*
+server/.env*
+
+# Development files
+.git
+.gitignore
+README.md
+DEPLOYMENT.md
+*.md
+
+# IDE files
+.vscode
+.idea
+*.swp
+*.swo
+
+# Logs
+logs
+*.log
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage directory used by tools like istanbul
+coverage
+
+# Dependency directories
+node_modules/
+jspm_packages/
+
+# Optional npm cache directory
+.npm
+
+# Optional REPL history
+.node_repl_history
+
+# Output of 'npm pack'
+*.tgz
+
+# Yarn Integrity file
+.yarn-integrity
+
+# dotenv environment variables file
+.env
+
+# Uploads and data (will be handled by volumes)
+uploads/
+server/uploads/
+server/data/
+
+# Demo data (not needed in production)
+demo-data/
+
+# Test files
+**/*.test.ts
+**/*.test.tsx
+**/__tests__/
+test-demo-scenarios.md
+
+# Development scripts
+deploy.sh
+deploy.bat

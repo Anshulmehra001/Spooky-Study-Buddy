@@ -1,0 +1,140 @@
+{
+  "test-user-123": {
+    "userId": "test-user-123",
+    "level": 1,
+    "experiencePoints": 10,
+    "storiesRead": [
+      {
+        "id": "test-story-1",
+        "title": "Test Story",
+        "difficulty": "beginner",
+        "estimatedReadTime": 5
+      }
+    ],
+    "quizzesTaken": [],
+    "badges": [
+      {
+        "id": "welcome",
+        "name": "Welcome to the Coven",
+        "description": "Joined the Spooky Study Buddy family!",
+        "icon": "🎭",
+        "unlockedAt": "2025-11-14T16:21:44.438Z",
+        "rarity": "common"
+      }
+    ],
+    "currentStreak": 0,
+    "longestStreak": 0
+  },
+  "default": {
+    "userId": "default",
+    "level": 1,
+    "experiencePoints": 30,
+    "storiesRead": [
+      {
+        "id": "story-1763905044445-fallback",
+        "title": "🎃 The Haunted Study Session (Backup Tale)",
+        "content": "🎃 Once upon a midnight dreary, in a haunted library...\n\nProfessor Ghostly floated through the dusty halls, carrying ancient scrolls of knowledge. \"Boo-tiful learning awaits!\" they whispered to the shadows.\n\nThe subject of Direct text input had always been mysterious, but tonight it would become clear. Madame Mystique appeared with a dramatic flourish, cape billowing in the supernatural breeze.\n\n\"Knowledge is the most powerful spell!\" they declared, pointing to the glowing text that materialized in the air:\n\nPhotosynthesis is the process by which plants convert sunlight into energy. Plants use chlorophyll in their leaves to capture light energy from the sun. This energy is used to convert carbon dioxide from the air and water from the soil into glucose (sugar) and oxygen.\r\n\r\nThe basic equation for photosynthesis is:\r\n6CO2 + 6H2O + light energy → C6H12O6 + 6O2\r\n\r\nThis process happens in two main stages:\r\n1. Light-dependent reactions (occur in the thylakoids)\r\n2. Light-independent reactions or Calvin ...\n\nAs the clock struck midnight, the knowledge began to make sense. The spooky characters had worked their magic, transforming dry facts into memorable wisdom.\n\nAnd so, dear student, the lesson was learned in the most delightfully frightful way! 👻📚",
+        "originalContent": "Photosynthesis is the process by which plants convert sunlight into energy. Plants use chlorophyll in their leaves to capture light energy from the sun. This energy is used to convert carbon dioxide from the air and water from the soil into glucose (sugar) and oxygen.\r\n\r\nThe basic equation for photosynthesis is:\r\n6CO2 + 6H2O + light energy → C6H12O6 + 6O2\r\n\r\nThis process happens in two main stages:\r\n1. Light-dependent reactions (occur in the thylakoids)\r\n2. Light-independent reactions or Calvin cycle (occur in the stroma)\r\n\r\nPhotosynthesis is essential for life on Earth because it produces oxygen and forms the base of most food chains.",
+        "originalTopic": "Direct text input",
+        "characters": [
+          "Professor Ghostly",
+          "Madame Mystique"
+        ],
+        "keyLearningPoints": [
+          "Photosynthesis is the process by which plants convert sunlight into energy",
+          "Plants use chlorophyll in their leaves to capture light energy from the sun",
+          "This energy is used to convert carbon dioxide from the air and water from the soil into glucose (sugar) and oxygen",
+          "The basic equation for photosynthesis is:\r\n6CO2 + 6H2O + light energy → C6H12O6 + 6O2\r\n\r\nThis process happens in two main stages:\r\n1",
+          "Light-dependent reactions (occur in the thylakoids)\r\n2"
+        ],
+        "difficulty": "intermediate",
+        "estimatedReadTime": 1,
+        "createdAt": "2025-11-23T13:37:24.445Z",
+        "shareableLink": "story-1763905044445-fallback-2gpr0n555fq"
+      },
+      {
+        "id": "story-1763905581934-fallback",
+        "title": "🎃 Bonnie Bones's Guide to The American Revolution... 👻",
+        "content": "🎃 **The Haunted Library of Knowledge** 🎃\nOn a dark and stormy night, Bonnie Bones the skeleton discovered an ancient tome in the depths of the haunted library. The dusty pages glowed with an eerie light as they revealed secrets about Direct text input.\n\"Learning is in my bones!\" Bonnie Bones exclaimed, their spectral form shimmering with excitement.\n\n📚 **The Ancient Knowledge Revealed** 📚\nCount Studula the vampire appeared in a swirl of mist, ready to help decode the mysterious text:\n\nThe American Revolution (1775-1783) was a colonial revolt that took place in British America. The American Patriots in the Thirteen Colonies won independence from Great Britain, becoming the United States of America.\r\n\r\nKey events leading to the revolution:\r\n- The Stamp Act (1765) - taxed printed materials\r\n- The Boston Tea Party (1773) - protest against tea taxes\r\n- The Intolerable Acts (1774) - punitive laws after the Tea Party\r\n\r\nImportant battles:\r\n- Lexington and Concord (1775) - \"shot heard round the world\"\r\n- Bunker Hill (1775) - proved colonists could fight British forces\r\n- Saratoga (1777) - convinced France to join the war\r\n- Yorktown (1781) - final major battle, British surrender\r\n\r\nThe war ended with the Treaty of Paris in 1783, which recognized American independence.\n\n\n✨ **The Lesson Learned** ✨\n\"I vant to teach you something new!\" Count Studula said with a knowing smile. \"Now you understand the mysteries within!\"\n\nThe spooky characters had successfully transformed the lesson into an unforgettable adventure. The knowledge was no longer just words on a page - it was a story that would haunt your memory forever! 👻📖\n",
+        "originalContent": "The American Revolution (1775-1783) was a colonial revolt that took place in British America. The American Patriots in the Thirteen Colonies won independence from Great Britain, becoming the United States of America.\r\n\r\nKey events leading to the revolution:\r\n- The Stamp Act (1765) - taxed printed materials\r\n- The Boston Tea Party (1773) - protest against tea taxes\r\n- The Intolerable Acts (1774) - punitive laws after the Tea Party\r\n\r\nImportant battles:\r\n- Lexington and Concord (1775) - \"shot heard round the world\"\r\n- Bunker Hill (1775) - proved colonists could fight British forces\r\n- Saratoga (1777) - convinced France to join the war\r\n- Yorktown (1781) - final major battle, British surrender\r\n\r\nThe war ended with the Treaty of Paris in 1783, which recognized American independence.",
+        "originalTopic": "Direct text input",
+        "characters": [
+          "Bonnie Bones",
+          "Count Studula"
+        ],
+        "keyLearningPoints": [
+          "The American Revolution (1775-1783) was a colonial revolt that took place in British America",
+          "The American Patriots in the Thirteen Colonies won independence from Great Britain, becoming the United States of America",
+          "Key events leading to the revolution:\r\n- The Stamp Act (1765) - taxed printed materials\r\n- The Boston Tea Party (1773) - protest against tea taxes\r\n- The Intolerable Acts (1774) - punitive laws after the Tea Party\r\n\r\nImportant battles:\r\n- Lexington and Concord (1775) - \"shot heard round the world\"\r\n- Bunker Hill (1775) - proved colonists could fight British forces\r\n- Saratoga (1777) - convinced France to join the war\r\n- Yorktown (1781) - final major battle, British surrender\r\n\r\nThe war ended with the Treaty of Paris in 1783, which recognized American independence"
+        ],
+        "difficulty": "intermediate",
+        "estimatedReadTime": 2,
+        "createdAt": "2025-11-23T13:46:21.934Z",
+        "shareableLink": "story-1763905581934-fallback-pfizubl7sta"
+      },
+      {
+        "id": "story-1763906846061-fallback",
+        "title": "🎃 Bonnie Bones's Guide to The American Revolution... 👻",
+        "content": "🎃 **The Haunted Library of Knowledge** 🎃\nOn a dark and stormy night, Bonnie Bones the skeleton discovered an ancient tome in the depths of the haunted library. The dusty pages glowed with an eerie light as they revealed secrets about Direct text input.\n\"Learning is in my bones!\" Bonnie Bones exclaimed, their spectral form shimmering with excitement.\n\n📚 **The Ancient Knowledge Revealed** 📚\nCount Studula the vampire appeared in a swirl of mist, ready to help decode the mysterious text:\n\nThe American Revolution (1775-1783) was a colonial revolt that took place in British America. The American Patriots in the Thirteen Colonies won independence from Great Britain, becoming the United States of America.\r\n\r\nKey events leading to the revolution:\r\n- The Stamp Act (1765) - taxed printed materials\r\n- The Boston Tea Party (1773) - protest against tea taxes\r\n- The Intolerable Acts (1774) - punitive laws after the Tea Party\r\n\r\nImportant battles:\r\n- Lexington and Concord (1775) - \"shot heard round the world\"\r\n- Bunker Hill (1775) - proved colonists could fight British forces\r\n- Saratoga (1777) - convinced France to join the war\r\n- Yorktown (1781) - final major battle, British surrender\r\n\r\nThe war ended with the Treaty of Paris in 1783, which recognized American independence.\n\n\n✨ **The Lesson Learned** ✨\n\"I vant to teach you something new!\" Count Studula said with a knowing smile. \"Now you understand the mysteries within!\"\n\nThe spooky characters had successfully transformed the lesson into an unforgettable adventure. The knowledge was no longer just words on a page - it was a story that would haunt your memory forever! 👻📖\n",
+        "originalContent": "The American Revolution (1775-1783) was a colonial revolt that took place in British America. The American Patriots in the Thirteen Colonies won independence from Great Britain, becoming the United States of America.\r\n\r\nKey events leading to the revolution:\r\n- The Stamp Act (1765) - taxed printed materials\r\n- The Boston Tea Party (1773) - protest against tea taxes\r\n- The Intolerable Acts (1774) - punitive laws after the Tea Party\r\n\r\nImportant battles:\r\n- Lexington and Concord (1775) - \"shot heard round the world\"\r\n- Bunker Hill (1775) - proved colonists could fight British forces\r\n- Saratoga (1777) - convinced France to join the war\r\n- Yorktown (1781) - final major battle, British surrender\r\n\r\nThe war ended with the Treaty of Paris in 1783, which recognized American independence.",
+        "originalTopic": "Direct text input",
+        "characters": [
+          "Bonnie Bones",
+          "Count Studula"
+        ],
+        "keyLearningPoints": [
+          "The American Revolution (1775-1783) was a colonial revolt that took place in British America",
+          "The American Patriots in the Thirteen Colonies won independence from Great Britain, becoming the United States of America",
+          "Key events leading to the revolution:\r\n- The Stamp Act (1765) - taxed printed materials\r\n- The Boston Tea Party (1773) - protest against tea taxes\r\n- The Intolerable Acts (1774) - punitive laws after the Tea Party\r\n\r\nImportant battles:\r\n- Lexington and Concord (1775) - \"shot heard round the world\"\r\n- Bunker Hill (1775) - proved colonists could fight British forces\r\n- Saratoga (1777) - convinced France to join the war\r\n- Yorktown (1781) - final major battle, British surrender\r\n\r\nThe war ended with the Treaty of Paris in 1783, which recognized American independence"
+        ],
+        "difficulty": "intermediate",
+        "estimatedReadTime": 2,
+        "createdAt": "2025-11-23T14:07:26.061Z",
+        "shareableLink": "story-1763906846061-fallback-p8rxi00xltm"
+      }
+    ],
+    "quizzesTaken": [
+      {
+        "quizId": "quiz-fallback-1763905096759",
+        "score": 0,
+        "totalQuestions": 3,
+        "correctAnswers": 0,
+        "timeSpent": 23,
+        "feedback": "💀 Keep trying! You scored 0% (0/3 correct). Remember, even skeletons need to study their bones! Don't give up!",
+        "badges": [
+          "Quiz Conqueror",
+          "First Steps"
+        ],
+        "submittedAt": "2025-11-23T13:38:43.482Z"
+      }
+    ],
+    "badges": [
+      {
+        "id": "welcome",
+        "name": "Welcome to the Coven",
+        "description": "Joined the Spooky Study Buddy family!",
+        "icon": "🎭",
+        "unlockedAt": "2025-11-23T13:37:24.694Z",
+        "rarity": "common"
+      },
+      {
+        "id": "first-quiz",
+        "name": "First Quiz Master",
+        "description": "Completed your first spooky quiz!",
+        "icon": "🧙‍♀️",
+        "unlockedAt": "2025-11-23T13:38:43.522Z",
+        "rarity": "common"
+      },
+      {
+        "id": "first-story",
+        "name": "Story Seeker",
+        "description": "Read your first spooky story!",
+        "icon": "👻",
+        "unlockedAt": "2025-11-23T13:38:43.522Z",
+        "rarity": "common"
+      }
+    ],
+    "currentStreak": 1,
+    "longestStreak": 1
+  }
+}

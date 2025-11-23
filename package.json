@@ -1,0 +1,42 @@
+{
+  "name": "spooky-study-buddy",
+  "version": "1.0.0",
+  "description": "Halloween-themed AI-powered learning assistant",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently \"npm run dev:client\" \"npm run dev:server\"",
+    "dev:client": "cd client && npm run dev",
+    "dev:server": "cd server && npm run dev",
+    "build": "npm run build:client && npm run build:server",
+    "build:client": "cd client && npm run build",
+    "build:server": "cd server && npm run build",
+    "build:prod": "npm run build:client:prod && npm run build:server:prod",
+    "build:client:prod": "cd client && npm run build:prod",
+    "build:server:prod": "cd server && npm run build",
+    "start": "cd server && npm start",
+    "start:prod": "cd server && NODE_ENV=production npm start",
+    "lint": "npm run lint:client && npm run lint:server",
+    "lint:client": "cd client && npm run lint",
+    "lint:server": "cd server && npm run lint",
+    "test": "npm run test:client && npm run test:server",
+    "test:client": "cd client && npm run test",
+    "test:server": "cd server && npm run test",
+    "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,css,md}\"",
+    "install:all": "npm install && cd client && npm install && cd ../server && npm install",
+    "deploy:prep": "node deploy.bat",
+    "deploy:docker": "docker-compose up -d",
+    "deploy:docker:build": "docker-compose up --build -d"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "prettier": "^3.0.3",
+    "@typescript-eslint/eslint-plugin": "^6.7.4",
+    "@typescript-eslint/parser": "^6.7.4",
+    "eslint": "^8.50.0"
+  },
+  "workspaces": [
+    "client",
+    "server",
+    "shared"
+  ]
+}

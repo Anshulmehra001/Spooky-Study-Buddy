@@ -1,0 +1,49 @@
+{
+  "id": "quiz-fallback-1763904938684",
+  "storyId": "story-1763904923784-fallback",
+  "questions": [
+    {
+      "id": "fallback-q1",
+      "question": "What was the main topic covered in this spooky story?",
+      "options": [
+        "Halloween decorations",
+        "The educational content from your study material",
+        "Ghost stories",
+        "Cooking recipes"
+      ],
+      "correctAnswer": 1,
+      "explanation": "The story was designed to help you learn the educational content you uploaded, wrapped in a fun Halloween theme!",
+      "character": "ghost"
+    },
+    {
+      "id": "fallback-q2",
+      "question": "How did the Halloween characters help with learning?",
+      "options": [
+        "They scared away distractions",
+        "They made the content more engaging and memorable",
+        "They provided snacks",
+        "They did the homework for you"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Halloween characters make learning more engaging by creating memorable associations with the educational content!",
+      "character": "witch"
+    },
+    {
+      "id": "fallback-q3",
+      "question": "What is the benefit of story-based learning?",
+      "options": [
+        "It's faster than regular studying",
+        "It helps create memorable connections and context for information",
+        "It requires no effort",
+        "It only works during Halloween"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Story-based learning helps your brain create narrative connections, making information easier to remember and understand!",
+      "character": "vampire"
+    }
+  ],
+  "totalPoints": 30,
+  "difficulty": "medium",
+  "timeLimit": 270,
+  "createdAt": "2025-11-23T13:35:38.684Z"
+}

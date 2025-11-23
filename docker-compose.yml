@@ -1,0 +1,43 @@
+version: '3.8'
+
+services:
+  spooky-study-buddy:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    container_name: spooky-study-buddy
+    ports:
+      - "${PORT:-3001}:3001"
+    environment:
+      - NODE_ENV=production
+      - PORT=3001
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+      - ALLOWED_ORIGINS=${ALLOWED_ORIGINS:-*}
+      - MAX_FILE_SIZE=${MAX_FILE_SIZE:-10485760}
+      - STORIES_RETENTION_DAYS=${STORIES_RETENTION_DAYS:-30}
+      - CLEANUP_INTERVAL_HOURS=${CLEANUP_INTERVAL_HOURS:-6}
+      - UPLOAD_DIR=/app/server/uploads
+      - LOG_LEVEL=${LOG_LEVEL:-info}
+    volumes:
+      - uploads:/app/server/uploads
+      - stories:/app/server/data
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "node", "-e", "require('http').get('http://localhost:3001/api/health', (res) => { process.exit(res.statusCode === 200 ? 0 : 1) }).on('error', () => process.exit(1))"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+    labels:
+      - "com.spooky-study-buddy.description=Halloween-themed AI learning assistant"
+      - "com.spooky-study-buddy.version=1.0.0"
+
+volumes:
+  uploads:
+    driver: local
+  stories:
+    driver: local
+
+networks:
+  default:
+    name: spooky-network
