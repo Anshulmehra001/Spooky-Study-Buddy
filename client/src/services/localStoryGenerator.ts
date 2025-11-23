@@ -1,9 +1,9 @@
-import { Story, Quiz, QuizQuestion, HalloweenCharacterType } from '../../../shared/src/types';
+import { SpookyStory, Quiz, QuizQuestion, HalloweenCharacterType } from '../../../shared/src/types';
 
 const HALLOWEEN_CHARACTERS: HalloweenCharacterType[] = ['ghost', 'vampire', 'witch', 'skeleton'];
 
 export class LocalStoryGenerator {
-  async generateStory(content: string, fileName?: string): Promise<Story> {
+  async generateStory(content: string, fileName?: string): Promise<SpookyStory> {
     const provider = localStorage.getItem('ai_provider') || 'none';
     const apiKey = localStorage.getItem('ai_api_key');
 
@@ -23,7 +23,7 @@ export class LocalStoryGenerator {
     fileName: string | undefined,
     provider: 'openai' | 'gemini',
     apiKey: string
-  ): Promise<Story> {
+  ): Promise<SpookyStory> {
     const topic = this.extractTopic(content, fileName);
     const prompt = `Transform this educational content into an engaging Halloween-themed story. Keep ALL the educational content intact but wrap it in a spooky narrative with Halloween characters (ghosts, vampires, witches, skeletons). Make it fun but preserve the learning material.
 
@@ -89,6 +89,7 @@ Create a story that:
       title: `🎃 AI-Generated: ${topic}`,
       content: storyContent,
       originalContent: content,
+      originalTopic: topic,
       characters: characters.map(c => c.type),
       keyLearningPoints: this.extractKeyPoints(content),
       difficulty: 'medium',
@@ -97,7 +98,7 @@ Create a story that:
     };
   }
 
-  private generateTemplateStory(content: string, fileName?: string): Story {
+  private generateTemplateStory(content: string, fileName?: string): SpookyStory {
     const characters = this.selectRandomCharacters(2);
     const topic = this.extractTopic(content, fileName);
     
@@ -108,6 +109,7 @@ Create a story that:
       title: `🎃 ${characters[0].name}'s Guide to ${topic}`,
       content: storyContent,
       originalContent: content,
+      originalTopic: topic,
       characters: characters.map(c => c.type),
       keyLearningPoints: this.extractKeyPoints(content),
       difficulty: 'medium',
@@ -116,7 +118,7 @@ Create a story that:
     };
   }
 
-  generateQuiz(story: Story): Quiz {
+  generateQuiz(story: SpookyStory): Quiz {
     const sentences = story.originalContent
       .split(/[.!?]+/)
       .map(s => s.trim())
