@@ -56,22 +56,26 @@ export const ProgressDashboard: React.FC = () => {
       </Card>
 
       <div className="grid md:grid-cols-2 gap-6">
-        <Card className="text-center">
-          <Ghost message="Stories Created!" />
-          <div className="text-6xl font-bold text-spooky-orange mt-4">
+        <Card className="text-center min-h-[280px] flex flex-col justify-center">
+          <div className="mb-4">
+            <Ghost message="Stories Created!" />
+          </div>
+          <div className="text-6xl font-bold text-spooky-orange mb-2">
             {storiesCount}
           </div>
-          <p className="text-spooky-cream opacity-80 mt-2">
+          <p className="text-spooky-cream opacity-80 text-lg">
             Spooky Stories Generated
           </p>
         </Card>
 
-        <Card className="text-center">
-          <Witch message="Quizzes Taken!" />
-          <div className="text-6xl font-bold text-spooky-purple mt-4">
+        <Card className="text-center min-h-[280px] flex flex-col justify-center">
+          <div className="mb-4">
+            <Witch message="Quizzes Taken!" />
+          </div>
+          <div className="text-6xl font-bold text-spooky-purple mb-2">
             {quizzesCount}
           </div>
-          <p className="text-spooky-cream opacity-80 mt-2">
+          <p className="text-spooky-cream opacity-80 text-lg">
             Knowledge Tests Completed
           </p>
         </Card>
@@ -79,32 +83,32 @@ export const ProgressDashboard: React.FC = () => {
 
       {quizzesCount > 0 && (
         <div className="grid md:grid-cols-3 gap-6">
-          <Card className="text-center">
-            <div className="text-4xl mb-2">📈</div>
-            <div className="text-3xl font-bold text-spooky-orange">
+          <Card className="text-center min-h-[180px] flex flex-col justify-center py-6">
+            <div className="text-5xl mb-3">📈</div>
+            <div className="text-4xl font-bold text-spooky-orange mb-2">
               {averageScore}%
             </div>
-            <p className="text-spooky-cream opacity-80 text-sm">
+            <p className="text-spooky-cream opacity-80">
               Average Score
             </p>
           </Card>
 
-          <Card className="text-center">
-            <div className="text-4xl mb-2">⏱️</div>
-            <div className="text-3xl font-bold text-spooky-purple">
+          <Card className="text-center min-h-[180px] flex flex-col justify-center py-6">
+            <div className="text-5xl mb-3">⏱️</div>
+            <div className="text-4xl font-bold text-spooky-purple mb-2">
               {Math.floor(totalTime / 60)}m
             </div>
-            <p className="text-spooky-cream opacity-80 text-sm">
+            <p className="text-spooky-cream opacity-80">
               Total Study Time
             </p>
           </Card>
 
-          <Card className="text-center">
-            <div className="text-4xl mb-2">⭐</div>
-            <div className="text-3xl font-bold text-spooky-orange">
+          <Card className="text-center min-h-[180px] flex flex-col justify-center py-6">
+            <div className="text-5xl mb-3">⭐</div>
+            <div className="text-4xl font-bold text-spooky-orange mb-2">
               {perfectScores}
             </div>
-            <p className="text-spooky-cream opacity-80 text-sm">
+            <p className="text-spooky-cream opacity-80">
               Perfect Scores
             </p>
           </Card>
