@@ -92,7 +92,7 @@ Create a story that:
       originalTopic: topic,
       characters: characters.map(c => c.type),
       keyLearningPoints: this.extractKeyPoints(content),
-      difficulty: 'medium',
+      difficulty: 'intermediate',
       estimatedReadTime: Math.ceil(content.split(' ').length / 200),
       createdAt: new Date().toISOString()
     };
@@ -112,14 +112,14 @@ Create a story that:
       originalTopic: topic,
       characters: characters.map(c => c.type),
       keyLearningPoints: this.extractKeyPoints(content),
-      difficulty: 'medium',
+      difficulty: 'intermediate',
       estimatedReadTime: Math.ceil(content.split(' ').length / 200),
       createdAt: new Date().toISOString()
     };
   }
 
   generateQuiz(story: SpookyStory): Quiz {
-    const sentences = story.originalContent
+    const sentences = (story.originalContent || story.content)
       .split(/[.!?]+/)
       .map(s => s.trim())
       .filter(s => s.length > 30 && s.length < 200);

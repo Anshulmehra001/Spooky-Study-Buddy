@@ -1,7 +1,7 @@
 import React, { useState, Suspense, lazy } from 'react';
 import { BrowserRouter as Router, Routes, Route, useNavigate, useParams } from 'react-router-dom';
 import { Navigation, FileUpload, Card, Ghost, Witch, LoadingSpinner } from './components';
-import { storyApi, quizApi, progressApi, handleApiError } from './services/api';
+import { quizApi, progressApi, handleApiError } from './services/api';
 import { SpookyStory, Quiz as QuizType, QuizResult } from '../../shared/src/types';
 import { localStoryGenerator } from './services/localStoryGenerator';
 import { SpookyErrorBoundary } from './components/errors/SpookyErrorBoundary';
