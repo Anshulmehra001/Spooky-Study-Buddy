@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { useBreakpoint, useMobileInteractions } from '../../hooks/useResponsive';
 import { keyboardNav } from '../../utils/accessibility';
+import { AISettings } from '../settings/AISettings';
 
 export const Navigation: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -25,6 +26,8 @@ export const Navigation: React.FC = () => {
       return () => document.removeEventListener('keydown', handleKeyDown);
     }
   }, [isMenuOpen]);
+
+  const [showSettings, setShowSettings] = useState(false);
 
   const navItems = [
     { path: '/', label: 'Home', icon: '🏠' },
@@ -65,6 +68,13 @@ export const Navigation: React.FC = () => {
                 <span>{item.label}</span>
               </Link>
             ))}
+            <button
+              onClick={() => setShowSettings(true)}
+              className="flex items-center space-x-2 px-3 py-2 rounded-lg text-spooky-cream hover:text-spooky-orange hover:bg-spooky-orange hover:bg-opacity-20 transition-all"
+            >
+              <span>⚙️</span>
+              <span>AI Settings</span>
+            </button>
           </div>
 
           {/* Mobile menu button */}
@@ -106,6 +116,8 @@ export const Navigation: React.FC = () => {
           </div>
         )}
       </div>
+      
+      <AISettings isOpen={showSettings} onClose={() => setShowSettings(false)} />
     </nav>
   );
 };

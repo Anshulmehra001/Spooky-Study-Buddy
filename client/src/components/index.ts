@@ -12,6 +12,7 @@ export { Skeleton } from './characters/Skeleton';
 
 // Layout Components
 export { Navigation } from './layout/Navigation';
+export { AISettings } from './settings/AISettings';
 
 // Upload Components
 export { FileUpload } from './upload/FileUpload';
