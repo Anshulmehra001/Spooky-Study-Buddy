@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { Button, Card, Modal } from '../index';
+import { Button } from '../ui/Button';
+import { Modal } from '../ui/Modal';
 
 interface AISettingsProps {
   isOpen: boolean;
