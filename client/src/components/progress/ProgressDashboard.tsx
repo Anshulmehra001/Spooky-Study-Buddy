@@ -1,5 +1,13 @@
 import React, { useState, useEffect } from 'react';
-import { Card, LoadingSpinner, Ghost, Witch, Vampire, Skeleton, StreakCounter, LevelUpNotification, BadgeNotification } from '../index';
+import { Card } from '../ui/Card';
+import { LoadingSpinner } from '../ui/LoadingSpinner';
+import { Ghost } from '../characters/Ghost';
+import { Witch } from '../characters/Witch';
+import { Vampire } from '../characters/Vampire';
+import { Skeleton } from '../characters/Skeleton';
+import { StreakCounter } from '../gamification/StreakCounter';
+import { LevelUpNotification } from '../gamification/LevelUpNotification';
+import { BadgeNotification } from '../gamification/BadgeNotification';
 import { progressApi, handleApiError } from '../../services/api';
 import { gamificationService, LevelInfo } from '../../services/gamificationService';
 import { UserProgress, Badge } from '../../../../shared/src/types';

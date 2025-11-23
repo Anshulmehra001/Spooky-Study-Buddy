@@ -1,6 +1,7 @@
 import React, { useState, useRef, useCallback } from 'react';
 import { motion } from 'framer-motion';
-import { Button, LoadingSpinner } from '../index';
+import { Button } from '../ui/Button';
+import { LoadingSpinner } from '../ui/LoadingSpinner';
 
 interface FileUploadProps {
   onFileUpload: (content: string, fileName: string) => void;

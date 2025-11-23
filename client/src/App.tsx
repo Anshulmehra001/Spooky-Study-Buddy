@@ -1,6 +1,11 @@
 import React, { useState, Suspense, lazy } from 'react';
 import { BrowserRouter as Router, Routes, Route, useNavigate, useParams } from 'react-router-dom';
-import { Navigation, FileUpload, Card, Ghost, Witch, LoadingSpinner } from './components';
+import { Navigation } from './components/layout/Navigation';
+import { FileUpload } from './components/upload/FileUpload';
+import { Card } from './components/ui/Card';
+import { Ghost } from './components/characters/Ghost';
+import { Witch } from './components/characters/Witch';
+import { LoadingSpinner } from './components/ui/LoadingSpinner';
 import { quizApi, progressApi, handleApiError } from './services/api';
 import { SpookyStory, Quiz as QuizType, QuizResult } from '../../shared/src/types';
 import { localStoryGenerator } from './services/localStoryGenerator';

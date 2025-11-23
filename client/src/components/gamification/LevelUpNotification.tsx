@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { Card, Button } from '../index';
+import { Card } from '../ui/Card';
+import { Button } from '../ui/Button';
 import { LevelInfo } from '../../services/gamificationService';
 import { Badge } from '../../../../shared/src/types';
 

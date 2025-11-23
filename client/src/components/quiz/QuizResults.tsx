@@ -1,7 +1,12 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { QuizResult } from '../../../../shared/src/types';
-import { Button, Card, Ghost, Vampire, Witch, Skeleton } from '../index';
+import { Button } from '../ui/Button';
+import { Card } from '../ui/Card';
+import { Ghost } from '../characters/Ghost';
+import { Vampire } from '../characters/Vampire';
+import { Witch } from '../characters/Witch';
+import { Skeleton } from '../characters/Skeleton';
 
 interface QuizResultsProps {
   result: QuizResult;

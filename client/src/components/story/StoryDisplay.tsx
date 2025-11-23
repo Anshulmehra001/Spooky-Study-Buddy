@@ -1,7 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { SpookyStory } from '../../../../shared/src/types';
-import { Button, Card, Ghost, Vampire, Witch, Skeleton } from '../index';
+import { Button } from '../ui/Button';
+import { Card } from '../ui/Card';
+import { Ghost } from '../characters/Ghost';
+import { Vampire } from '../characters/Vampire';
+import { Witch } from '../characters/Witch';
+import { Skeleton } from '../characters/Skeleton';
 
 interface StoryDisplayProps {
   story: SpookyStory;

@@ -1,7 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Quiz as QuizType, QuizResult } from '../../../../shared/src/types';
-import { Button, Card, Ghost, Vampire, Witch, Skeleton, LoadingSpinner } from '../index';
+import { Button } from '../ui/Button';
+import { Card } from '../ui/Card';
+import { Ghost } from '../characters/Ghost';
+import { Vampire } from '../characters/Vampire';
+import { Witch } from '../characters/Witch';
+import { Skeleton } from '../characters/Skeleton';
+import { LoadingSpinner } from '../ui/LoadingSpinner';
 import { useBreakpoint, useMobileInteractions } from '../../hooks/useResponsive';
 
 interface QuizProps {
