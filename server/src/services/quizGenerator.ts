@@ -244,11 +244,11 @@ Respond with ONLY a JSON array in this exact format:
       
       questions.push({
         id: `q${i + 1}-${Date.now()}`,
-        question: `Complete the statement: "${questionText}"`,
+        question: `Complete the statement: ${questionText}`,
         options: shuffled,
         correctAnswer: correctIndex,
         explanation: `The correct answer is "${keyTerm}". This comes directly from your study material: "${sentence}"`,
-        character: HALLOWEEN_CHARACTERS[i % HALLOWEEN_CHARACTERS.length].type
+        character: HALLOWEEN_CHARACTERS[i % HALLOWEEN_CHARACTERS.length]
       });
     }
     
