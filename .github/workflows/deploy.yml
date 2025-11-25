@@ -36,6 +36,15 @@ jobs:
           cd client
           npm run build
 
+      - name: Verify build output
+        run: |
+          echo "Checking dist folder contents:"
+          ls -la client/dist/
+          echo "Checking for 404.html:"
+          test -f client/dist/404.html && echo "✓ 404.html exists" || echo "✗ 404.html missing"
+          echo "Checking for .nojekyll:"
+          test -f client/dist/.nojekyll && echo "✓ .nojekyll exists" || echo "✗ .nojekyll missing"
+
       - name: Setup Pages
         uses: actions/configure-pages@v4
 
